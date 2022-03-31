@@ -3,8 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="vending machine"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>vending machine</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <section id="machine">
+      <!-- 메인화면 -->
+      <div class="machine__main">
+        <ul class="main__bar">
+          <li class="bar__item">Soda</li>
+          <li class="bar__item">Sports drink</li>
+          <li class="bar__item">Coffee</li>
+          <li class="bar__item">Water</li>
+        </ul>
+        <div class="main__items">
+          <div class="drink">
+            <img src="imgs/soda/soda1.png" alt="soda1" />
+            <span class="drink__price">600원</span>
+          </div>
+          <div class="drink">
+            <img src="imgs/soda/soda2.png" alt="soda2" />
+            <span class="drink__price">700원</span>
+          </div>
+          <div class="drink">
+            <img src="imgs/soda/soda3.png" alt="soda3" />
+            <span class="drink__price">700원</span>
+          </div>
+          <div class="drink">
+            <img src="imgs/soda/soda4.png" alt="soda4" />
+            <span class="drink__price">900원</span>
+          </div>
+          <div class="drink">
+            <img src="imgs/soda/soda5.png" alt="soda5" />
+            <span class="drink__price">1000원</span>
+          </div>
+          <div class="drink">
+            <img src="imgs/soda/soda6.png" alt="soda6" />
+            <span class="drink__price">1100원</span>
+          </div>
+          <div class="drink">
+            <img src="imgs/soda/soda7.png" alt="soda7" />
+            <span class="drink__price">1500원</span>
+          </div>
+        </div>
+      </div>
+      <!-- 결제정보 -->
+      <div class="machine__order">
+        <div class="order__presentValue"></div>
+        <div class="order__list"></div>
+        <div class="order__pay"></div>
+      </div>
+    </section>
+  </body>
 </html>
