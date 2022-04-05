@@ -13,7 +13,7 @@
   <body>
     <section id="machine">
       <!-- 메인화면 -->
-      <div class="machine__main">
+      <div class="main">
         <ul class="main__bar">
           <li class="bar__item">Soda</li>
           <li class="bar__item">Sports drink</li>
@@ -23,6 +23,7 @@
         <div class="main__items">
           <div class="drink">
             <img src="imgs/soda/soda1.png" alt="soda1" />
+            <span class="drink__name">red soda</span>
             <span class="drink__price">600원</span>
           </div>
           <div class="drink">
@@ -52,10 +53,37 @@
         </div>
       </div>
       <!-- 결제정보 -->
-      <div class="machine__order">
-        <div class="order__presentValue"></div>
-        <div class="order__list"></div>
-        <div class="order__pay"></div>
+      <div class="count">
+        <!-- ------------------------------------------- -->
+        <div class="count__balance">
+          <div class="balance__vlaue">
+            <span>사용가능금액: </span>
+            <span class="value">2000</span>
+          </div>
+          <button class="presentValue__charging">충전</button>
+        </div>
+        <!-- ------------------------------------------- -->
+        <div class="count__order">
+          <ul class="oder__list">
+            <li class="list">
+              <img src="imgs/soda/soda1.png" alt="soda1" />
+              <span>soda1</span>
+              <div class="option">
+                <input type="text" name="amount" id="amount" />
+                <div class="buttons">
+                  <button class="plusBtn">+</button>
+                  <button class="minusBtn">-</button>
+                </div>
+                <button class="cancelBtn">x</button>
+              </div>
+            </li>
+          </ul>
+          <div class="order__sum">
+            <span>합계: </span><span class="sum">5000</span>
+          </div>
+        </div>
+        <!-- ------------------------------------------- -->
+        <button class="count__pay">결제하기</button>
       </div>
     </section>
   </body>
