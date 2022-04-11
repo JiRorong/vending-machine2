@@ -9,54 +9,128 @@
     />
     <title>vending machine</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section id="machine">
-      <!-- 메인화면 -->
-      <div class="main">
-        <ul class="main__bar">
-          <li class="bar__item">Soda</li>
-          <li class="bar__item">Sports drink</li>
-          <li class="bar__item">Coffee</li>
-          <li class="bar__item">Water</li>
-        </ul>
-        <div class="main__items">
-          <div class="drink">
-            <img src="imgs/soda/soda1.png" alt="soda1" />
+    <!-- Bar -->
+    <ul class="bar">
+      <li class="bar__item">Soda</li>
+      <li class="bar__item">Sports drink</li>
+      <li class="bar__item">Coffee</li>
+      <li class="bar__item">Water</li>
+    </ul>
+    <!-- Main -->
+    <div class="main">
+      <ul class="main__item">
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
             <span class="drink__name">red soda</span>
             <span class="drink__price">600원</span>
-          </div>
-          <div class="drink">
-            <img src="imgs/soda/soda2.png" alt="soda2" />
-            <span class="drink__price">700원</span>
-          </div>
-          <div class="drink">
-            <img src="imgs/soda/soda3.png" alt="soda3" />
-            <span class="drink__price">700원</span>
-          </div>
-          <div class="drink">
-            <img src="imgs/soda/soda4.png" alt="soda4" />
-            <span class="drink__price">900원</span>
-          </div>
-          <div class="drink">
-            <img src="imgs/soda/soda5.png" alt="soda5" />
-            <span class="drink__price">1000원</span>
-          </div>
-          <div class="drink">
-            <img src="imgs/soda/soda6.png" alt="soda6" />
-            <span class="drink__price">1100원</span>
-          </div>
-          <div class="drink">
-            <img src="imgs/soda/soda7.png" alt="soda7" />
-            <span class="drink__price">1500원</span>
-          </div>
-        </div>
-      </div>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+        <li class="drink">
+          <button class="btns">
+            <img
+              src="imgs/soda/soda1.png"
+              alt="soda1"
+              class="drink__img"
+            />
+            <span class="drink__name">red soda</span>
+            <span class="drink__price">600원</span>
+          </button>
+        </li>
+      </ul>
       <!-- 결제정보 -->
       <div class="count">
         <!-- ------------------------------------------- -->
         <div class="count__balance">
-          <div class="balance__vlaue">
+          <div class="balance__value">
             <span>사용가능금액: </span>
             <span class="value">2000</span>
           </div>
@@ -64,12 +138,42 @@
         </div>
         <!-- ------------------------------------------- -->
         <div class="count__order">
-          <ul class="oder__list">
+          <ul class="order__list">
             <li class="list">
-              <img src="imgs/soda/soda1.png" alt="soda1" />
+              <img
+                src="imgs/soda/soda1.png"
+                alt="soda1"
+                class="list__img"
+              />
               <span>soda1</span>
               <div class="option">
-                <input type="text" name="amount" id="amount" />
+                <input
+                  type="text"
+                  name="amount"
+                  id="amount"
+                  value="1"
+                />
+                <div class="buttons">
+                  <button class="plusBtn">+</button>
+                  <button class="minusBtn">-</button>
+                </div>
+                <button class="cancelBtn">x</button>
+              </div>
+            </li>
+            <li class="list">
+              <img
+                src="imgs/soda/soda1.png"
+                alt="soda1"
+                class="list__img"
+              />
+              <span>soda1</span>
+              <div class="option">
+                <input
+                  type="text"
+                  name="amount"
+                  id="amount"
+                  value="1"
+                />
                 <div class="buttons">
                   <button class="plusBtn">+</button>
                   <button class="minusBtn">-</button>
@@ -85,6 +189,6 @@
         <!-- ------------------------------------------- -->
         <button class="count__pay">결제하기</button>
       </div>
-    </section>
+    </div>
   </body>
 </html>
